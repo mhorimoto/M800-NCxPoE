@@ -656,7 +656,6 @@ NoConn ~ 7300 5100
 NoConn ~ 7300 5200
 NoConn ~ 3150 2500
 NoConn ~ 8550 2500
-NoConn ~ 2150 -2900
 Wire Bus Line
 	3600 2900 3600 6100
 Wire Bus Line
