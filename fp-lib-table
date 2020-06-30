@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name 001)(type KiCad)(uri "$(KIPRJMOD)/001.pretty")(options "")(descr ""))
+  (lib (name 001)(type KiCad)(uri "$(KIPRJMOD)/001.pretty")(options "")(descr "")(disabled))
   (lib (name opto)(type KiCad)(uri /usr/share/kicad/modules/OptoDevice.pretty)(options "")(descr "Optical devices (light sensors, opto isolators/interrupters, laser diodes, fiber optical components, lightpipes, lenses ...)")(disabled))
 )
