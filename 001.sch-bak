@@ -753,4 +753,8 @@ Text Label 7700 2800 0    50   ~ 0
 PD_GND
 Text Label 4600 2100 0    50   ~ 0
 PSE_GND
+Text Label 7400 3350 0    50   ~ 0
+PD_PWR
+Text Label 4000 2300 0    50   ~ 0
+PSE_PWR
 $EndSCHEMATC
