@@ -757,4 +757,6 @@ Wire Bus Line
 	3850 2900 3850 6100
 Wire Bus Line
 	7000 3200 7000 5100
+Text Label 2400 3600 0    50   ~ 0
+PSE_GND
 $EndSCHEMATC
