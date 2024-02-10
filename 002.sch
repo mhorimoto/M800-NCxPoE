@@ -4,12 +4,12 @@ EELAYER END
 $Descr User 11774 8671
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "M800-NCxPoE-PSE"
+Date "2020-08-08"
+Rev "001"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "Vcc=5V"
+Comment2 "PSE SIDE"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -134,17 +134,6 @@ F 3 "" H 5800 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 001-eagle-import:A4L-LOC #FRAME1
-U 1 1 73DA64CA
-P 900 7100
-F 0 "#FRAME1" H 900 7100 50  0001 C CNN
-F 1 "A4L-LOC" H 900 7100 50  0001 C CNN
-F 2 "" H 900 7100 50  0001 C CNN
-F 3 "" H 900 7100 50  0001 C CNN
-	1    900  7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Relay:G5LE-1 K11
 U 1 1 E90442EA
 P 5250 2700
@@ -157,8 +146,6 @@ F 3 "" H 5250 2700 50  0001 C CNN
 $EndComp
 Text Notes 6700 3300 0    59   ~ 0
 C-00159
-Text Notes 7500 6900 0    215  ~ 0
-Model-800\nNCxPoE
 $Comp
 L Connector:RJ45 J11
 U 1 1 5F2DC0A3
@@ -190,7 +177,7 @@ L Device:R_US R11
 U 1 1 5F314B94
 P 5400 1350
 F 0 "R11" V 5350 1250 59  0000 L BNN
-F 1 "4.7k" V 5500 1250 59  0000 L BNN
+F 1 "3.3k" V 5500 1250 59  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5400 1350 50  0001 C CNN
 F 3 "" H 5400 1350 50  0001 C CNN
 	1    5400 1350
@@ -362,7 +349,7 @@ L Device:R_US R12
 U 1 1 5F072746
 P 6000 3100
 F 0 "R12" H 6068 3146 50  0000 L CNN
-F 1 "R_US" H 6068 3055 50  0000 L CNN
+F 1 "4.7k" H 6068 3055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6040 3090 50  0001 C CNN
 F 3 "~" H 6000 3100 50  0001 C CNN
 	1    6000 3100
@@ -391,8 +378,6 @@ Wire Wire Line
 Connection ~ 6000 4100
 Wire Wire Line
 	6000 4100 6500 4100
-Text Notes 2650 5100 0    500  ~ 0
-PSE SIDE
 Text Notes 6900 3550 0    50   ~ 0
 TO PD
 Text Notes 3100 1500 0    50   ~ 0

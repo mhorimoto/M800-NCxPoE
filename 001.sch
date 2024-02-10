@@ -1,15 +1,15 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr User 11774 8671
+$Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "M800-NCxPoE-PD"
+Date "2020-08-08"
+Rev "001"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "PD SIDE"
+Comment2 "Vcc=5V"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -136,17 +136,6 @@ F 3 "" H 8050 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 001-eagle-import:A4L-LOC #FRAME1
-U 1 1 73DA64CA
-P 900 7100
-F 0 "#FRAME1" H 900 7100 50  0001 C CNN
-F 1 "A4L-LOC" H 900 7100 50  0001 C CNN
-F 2 "" H 900 7100 50  0001 C CNN
-F 3 "" H 900 7100 50  0001 C CNN
-	1    900  7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Varistor_US RV21
 U 1 1 84E86E02
 P 4750 3300
@@ -217,14 +206,12 @@ L Device:R_US R21
 U 1 1 DEA0C059
 P 7000 1200
 F 0 "R21" V 6950 1100 59  0000 L BNN
-F 1 "4.7k" V 7100 1100 59  0000 L BNN
+F 1 "3.3k" V 7100 1100 59  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 7000 1200 50  0001 C CNN
 F 3 "" H 7000 1200 50  0001 C CNN
 	1    7000 1200
 	0    1    1    0   
 $EndComp
-Text Notes 7500 6900 0    215  ~ 0
-Model-800\nNCxPoE
 $Comp
 L Connector:RJ45 J21
 U 1 1 5F235E93
@@ -327,8 +314,8 @@ $Comp
 L Device:R_US R22
 U 1 1 5F0794E0
 P 6450 2700
-F 0 "R22" V 6245 2700 50  0000 C CNN
-F 1 "R_US" V 6336 2700 50  0000 C CNN
+F 0 "R22" V 6350 2700 50  0000 C CNN
+F 1 "4.7k" V 6550 2700 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6490 2690 50  0001 C CNN
 F 3 "~" H 6450 2700 50  0001 C CNN
 	1    6450 2700
@@ -338,8 +325,8 @@ $Comp
 L Device:LED D23
 U 1 1 5F082CA7
 P 6850 2700
-F 0 "D23" H 6843 2917 50  0000 C CNN
-F 1 "LED" H 6843 2826 50  0000 C CNN
+F 0 "D23" H 6850 2800 50  0000 C CNN
+F 1 "LED" H 6850 2600 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 6850 2700 50  0001 C CNN
 F 3 "~" H 6850 2700 50  0001 C CNN
 	1    6850 2700
@@ -363,8 +350,6 @@ Wire Wire Line
 	6300 2700 6200 2700
 Wire Wire Line
 	6200 2700 6200 3000
-Text Notes 5900 4300 0    500  ~ 0
-PD SIDE
 Text Notes 8150 1500 0    50   ~ 0
 PD CTRL
 Text Notes 8150 2800 0    50   ~ 0
